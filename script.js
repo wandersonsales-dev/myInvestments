@@ -38,7 +38,7 @@ const setExchangeCur = () => {
 const setExchangeRel = () => {
   const rel = document.querySelector(relClass).value;
   const cur = document.querySelector(curClass);
-  cur.value = (rel * getCurrency('BRL')).toFixed(2);
+  cur.value = (rel / getCurrency('BRL')).toFixed(2);
 };
 
 const updateCurrency = async () => {
